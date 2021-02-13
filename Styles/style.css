@@ -1,0 +1,233 @@
+* {
+    font-family:'Roboto', sans-serif;
+    box-sizing:border-box;
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+/* Responsive grid layout */
+.col-1 {
+    width:8.33%;
+}
+.col-2 {
+    width:16.66%;
+}
+.col-3 {
+    width:25%;
+}
+.col-4 {
+    width:33.33%;
+}
+.col-5 {
+    width:41.66%;
+}
+.col-6 {
+    width:50%;
+}
+.col-7 {
+    width:58.33%;
+}
+.col-8 {
+    width:66.66%;
+}
+.col-9 {
+    width:75%;
+}
+.col-10 {
+    width:83.33%;
+}
+.col-11 {
+    width:91.66%;
+}
+.col-12 {
+    width:100%;
+}
+
+[class*="col-"] {
+    float:left;
+    padding:10px;
+}
+
+.row::after{
+    content:"";
+    clear:both;
+    display:table;
+}
+/*End responsive grid layout*/
+
+.imgLeft {
+    text-align:left;
+}
+
+header {
+    background-color:mediumaquamarine;
+    margin:0;
+}
+
+header img {
+    padding: 15px 0px 15px 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding:20px 0;
+    margin:0;
+}
+
+nav li {
+    display:inline;
+    padding:20px;
+    margin:0;
+}
+
+header li:hover, .activeLink {
+    background-color:midnightblue;
+}
+
+nav a {
+    color:white;
+    text-decoration:none;
+    font-weight:bolder;
+}
+
+#topImage {
+    background-color:white;
+    background-image:url(../Images/suit.jpg);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    width:100%;
+    height:550px;
+}
+
+.center {
+    display:block;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+div#topImage h1 {
+    color:white;
+    font-size:3em;
+    text-align:center;
+    font-weight:bolder;
+}
+
+footer {
+    background-color:darkgray;
+    margin:0;
+}
+
+footer nav {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+}
+
+footer ul, footer p {
+    text-align:center;
+    padding:20px 0;
+}
+
+footer p {
+    margin:0;
+    font-size:10px;
+    color:black;
+}
+
+
+@media only screen and (max-width:680px) {
+    [class*="col-"] {
+        width:100%;
+    }
+
+    .mobileHorCenter {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        padding-top:15px;
+        width:50%;
+        height:50%;
+    }
+
+    nav>ul {
+        padding:0;
+    }
+    
+    nav li {
+        display:block;
+        color:white;
+        text-align:center;
+        padding:20px 0;
+    }
+
+}
+
+ul, p, li, h1 {
+    margin:0;
+}
+
+p {
+    line-height: 2em;
+}
+
+aside {
+    background-color:rgba(72, 140, 241, 0.349);
+}
+
+aside h2 {
+    background-color:grey;
+    color:white;
+    padding:5px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+aside h3 {
+    text-align: center;
+    line-height:1.5em;
+}
+
+aside p {
+    font-size:0.9em;
+    line-height: 1.5em;
+    margin-bottom: 50px;
+}
+
+.thumbnail {
+    display: block;
+    width:100%;
+    height:150px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 15px;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+#cuerpo article {
+    border-bottom: 1px solid mediumaquamarine;
+    margin: 15px;
+    padding: 15px;
+}
+
+#cuerpo h2 {
+    text-align:center;
+}
+
+.icon {
+    display: block;
+    width:25%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 15px;
+    margin-bottom:15px;
+}
