@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Stock News Advisor</title>
+</head>
+<body>
+    <header>
+        <section>
+            <div>
+                <img src="Images/logoSNA.png" width="300px" height="144px" class="mobileHorCenter imgLeft" alt="Logo Stock News Advisor">
+            </div>    
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="activeLink"><a>Contacta con nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contactoGeneral" class="row">
+        <div class="col-12">
+        <div>
+            <form method="post">
+                <h2>Contacta con nosotros</h2>
+                <div class="col-6">
+                    <label for="name">Nombre:</label>
+                    <input id="name" name="name" type="text" required>
+                </div>
+                <div class="col-6">
+                    <label for="tlf">Teléfono:</label>
+                    <input id="tlf" type="text" name="tlf" placeholder="+34600123456">
+                </div>
+                <div class="col-12">
+                    <label for="email">Email:</label>
+                    <input id="email "type="email" name="email" placeholder="john@doe.com" required>
+                </div>
+                <div class="col-12">
+                    <label for="nivel">Conocimiento en activos de bolsa</label><br>
+                    <input type="radio" id="nivel1" value="nivel1" name="nivel1">
+                    <label for="nivel1">Ni idea</label><br>
+                    <input type="radio" id="nivel2" value="nivel2" name="nivel2">
+                    <label for="nivel2">Algo he escuchado pero nunca he invertido</label><br>
+                    <input type="radio" id="nivel3" value="nivel3" name="nivel3">
+                    <label for="nivel3">He invertido poco</label>
+                </div>
+                <div class="col-12">
+                    <input type="checkbox" id="rgpd" name="rgpd">
+                    <label for="rgpd" requiredo>He leido y acepto el tratamiento de mis datos</label>
+                </div>
+                <div class="boton">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <ul>
+                <li><a>Aviso legal</a></li>
+                <li><a>FAQ</a></li>
+            </ul>
+        </nav>
+        <p>&copy Copyright 2021 Charliefenz development</p>
+    </footer>
+</body>
+</html>
