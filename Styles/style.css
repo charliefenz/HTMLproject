@@ -142,6 +142,23 @@ footer p {
     color:black;
 }
 
+#contactoGeneral>div>div {
+    background-color: rgba(72, 140, 241, 0.349);
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:15px;
+}
+
+.boton input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    height:50px;
+    width:20%;
+    border-radius:5px;
+}
 
 @media only screen and (max-width:680px) {
     [class*="col-"] {
@@ -168,6 +185,19 @@ footer p {
         padding:20px 0;
     }
 
+    #contactoGeneral>div>div {
+        background-color: rgba(72, 140, 241, 0.349);
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+        border-radius:15px;
+    }
+
+    .boton input {
+        height:50px;
+        width:30%;
+    }
+
 }
 
 ul, p, li, h1 {
@@ -182,7 +212,7 @@ aside {
     background-color:rgba(72, 140, 241, 0.349);
 }
 
-aside h2 {
+aside h2, #contactoGeneral h2 {
     background-color:grey;
     color:white;
     padding:5px;
@@ -231,3 +261,13 @@ aside p {
     border-radius: 15px;
     margin-bottom:15px;
 }
+
+#contactoGeneral form {
+    padding:15px;
+}
+
+input[type="text"], input[type~="email"] {
+    width:100%;
+}
+
+
